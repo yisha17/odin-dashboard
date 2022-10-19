@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0;
+}
+
+.container{
+    display: grid; 
+    grid-template-columns: 300px auto; 
+    grid-template-rows: 100px auto;
+    height: 900px;
+}
+.top{
+background-color: rgb(182, 18, 18);
+}
+
+.icon img {
+    height: 40px;
+    color: white;
+
+}
+.sidebar{
+    background-color: rgb(18, 182, 40);
+    grid-row: 1/span 2;
+}
+.body{
+    background-color: rgb(182, 157, 18);
+}
