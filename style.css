@@ -1,28 +1,69 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0px;
     padding: 0;
+    font-family: 'Roboto Mono', monospace;
 }
 
-.container{
-    display: grid; 
-    grid-template-columns: 300px auto; 
+.container {
+    display: grid;
+    grid-template-columns: 250px auto;
     grid-template-rows: 100px auto;
     height: 900px;
 }
-.top{
-background-color: rgb(182, 18, 18);
+
+.top {
+    background-color: rgb(182, 18, 18);
 }
 
-.icon img {
-    height: 40px;
-    color: white;
-
-}
-.sidebar{
-    background-color: rgb(18, 182, 40);
-    grid-row: 1/span 2;
-}
-.body{
+.body {
     background-color: rgb(182, 157, 18);
 }
+
+/* sidebar decoration */
+
+.sidebar {
+    background-color: #1992D4;
+    grid-row: 1/span 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 20px;
+   
+}
+.main-icon{
+    font-size: 50px;
+    
+}
+.nav-item {
+    display: flex;
+    color: white;
+    font-size: 18px;
+    margin-bottom: 12px;
+    font-weight: bold;
+}
+.logo{
+    font-size: 23px;
+    font-weight: bold;
+    color: white;
+    margin-top: 10px;
+    display: flex;
+    margin-right: 10px;
+    align-items: center;
+}
+
+svg{
+    height: 43px;
+}
+.first-navigation{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+
+
+.material-icons, .material-icons-outlined{
+    color: white;
+    padding-right: 20px;
+}
+
