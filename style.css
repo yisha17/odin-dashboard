@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
+:root{
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
 * {
   box-sizing: border-box;
   margin: 0px;
@@ -71,6 +74,7 @@ svg {
   flex-direction: column;
   justify-content: space-between;
   padding: 20px 30px;
+  box-shadow: var(--shadow-lg);
 }
 .first-line {
   display: flex;
@@ -156,7 +160,8 @@ svg {
   background-color: #f1f5f9;
   display: grid;
   grid-template-columns: 3fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr;
+  padding: 20px 5px;
 }
 .projects {
   grid-row-start: 1;
@@ -167,7 +172,9 @@ svg {
 .project-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
- gap: 10px;
+ gap: 20px;
+ padding: 0px;
+ margin-top: 10px;
 }
 
 .card {
@@ -175,7 +182,7 @@ svg {
   height: 200px;
   border-left: solid 10px #f0b429;
   border-radius: 10px;
-  margin-top: 30px;
+ 
   display: flex;
   flex-flow: column;
   background-color: white;
@@ -198,22 +205,48 @@ svg {
 padding: 10px 10px 10px 0px;
 }
 
-
-.ann-title{
-    margin-bottom: 30px;
-}
 .announcement{
     background-color: white;
-    padding: 10px 10px;
+    padding: 20px 10px;
     grid-row: 1;
 }
 
+.announcement:nth-child(2){
+  border-top: solid  0.5px lightgray ;
+  border-bottom: solid  0.5px lightgray ;
+}
+
+
+
 .announcement-body{
     border-radius: 10px;
+    margin-top: 10px;
 }
 
 .announcement .card-text{
     font-size: 14px;
+}
+
+.trending-container{
+  background-color: white;
+  padding: 10px;
+  margin-top: 10px;
+}
+.trending-profile{
+  display: flex;
+  margin-top: 10px;
+}
+
+.trending-profiles-section{
+  margin-top: 0px;
+  grid-row: 2/3
+}
+
+.profile-pic-small{
+  width: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+
 }
 
 /* -----------body part finished--------------------- */
