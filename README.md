@@ -1,3 +1,3 @@
 # odin-dashboard
 
-Here is the Demo 👉 [Form](https://yisha17.github.io/odin-dashboard/ "Github home")
+Here is the Demo 👉 [Dashboard](https://yisha17.github.io/odin-dashboard/ "Github home")
